@@ -1,44 +1,25 @@
-# hpsd-descriptor-support
-HPSD Descriptor Support
+# HPE Service Director Descriptors
 
-This plugin provides syntax highlighting and basic support for .dsd, .hds, .dsc, .svc, .knd, .tpl, .hpsd, and .yaml files used in HPE Service Director (HPSD/HEAT).
+Este plugin fornece realce de sintaxe e suporte básico para arquivos `.dsd`, `.hds`, `.dsc`, `.svc`, `.knd`, `.tpl`, `.hpsd` e `.yaml` utilizados no HPE Service Director (HPSD/HEAT).
 
-Features
-Syntax Highlighting: Support for the following file types:
+## Recursos
 
-.dsd (Dynamic Service Descriptor)
+- **Realce de Sintaxe**: Suporte para os seguintes tipos de arquivo:
+  - `.dsd` (Dynamic Service Descriptor)
+  - `.hds`
+  - `.dsc`
+  - `.svc`
+  - `.knd`
+  - `.tpl`
+  - `.hpsd`
+  - `.yaml`
 
-.hds
+- **Snippets**: Trechos de código pré-definidos para facilitar a escrita e reduzir erros comuns.
 
-.dsc
+- **Configuração de Linguagem**: Definições específicas para comentários, pares de fechamento automático e colchetes correspondentes.
 
-.svc
+## Instalação
 
-.knd
-
-.tpl
-
-.hpsd
-
-.yaml
-
-Snippets: Predefined code snippets to speed up development and reduce common errors.
-
-Language Configuration: Custom definitions for comments, auto-closing pairs, and matching brackets.
-
-Installation
-Packaging: In the project root directory, run:
-
-bash:
-vsce package
-
-code --install-extension hpsd-descriptor-support-0.0.1.vsix
-
-
-
-
-
-
-
-
-
+1. **Empacotamento**: No diretório raiz do projeto, execute:
+   ```bash
+   vsce package

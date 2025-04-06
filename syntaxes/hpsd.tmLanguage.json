@@ -1,0 +1,44 @@
+{
+  "scopeName": "source.hpsd",
+  "name": "HPSD Descriptors",
+  "fileTypes": [
+    "dsd",
+    "hds",
+    "dsc",
+    "svc",
+    "knd",
+    "tpl",
+    "yaml"
+  ],
+  "patterns": [
+    {
+      "name": "comment.line.number-sign.hpsd",
+      "match": "#.*$"
+    },
+    {
+      "name": "keyword.control.hpsd",
+      "match": "\\b(DSD_kind_specification|DSD_service_specification|package|implements|actions|workflow|entity|parameters|root|makeservice|activate|deactivate|referrer|ref_linktype|autoname|force)\\b"
+    },
+    {
+      "name": "variable.parameter.hpsd",
+      "match": "\\b(id|name|value|description|optional|default|type|version|role|relationshipType|@type|@referredType|state|serviceSpecification|resourceSpecification|featureCharacteristic|constraint)\\b"
+    },
+    {
+      "name": "support.function.hpsd",
+      "match": "\\b(@cat|@cond|@sum|@ref|@expr)\\b"
+    },
+    {
+      "name": "support.type.hpsd",
+      "match": "\\b(string|integer|boolean|service|map<.*?>|list<.*?>|struct<.*?>|enum<.*?>)\\b"
+    },
+    {
+      "name": "constant.language.hpsd",
+      "match": "\\b(true|false|null)\\b"
+    },
+    {
+      "name": "keyword.other.hpsd",
+      "match": "\\$(\\w+)"
+    }
+  ],
+  "uuid": "b99d8ab3-c1c7-4a6e-9ef7-457ffdd8b0dc"
+}

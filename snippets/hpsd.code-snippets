@@ -1,0 +1,57 @@
+{
+  "Service Specification Block": {
+    "prefix": "svc-spec",
+    "body": [
+      "serviceSpecification:",
+      "  id: ${1:id}",
+      "  name: ${2:Example Service}",
+      "  @type: ${3:ServiceSpecificationRef}"
+    ],
+    "description": "Insert a serviceSpecification block"
+  },
+  "Resource Block": {
+    "prefix": "resource",
+    "body": [
+      "resource:",
+      "  id: ${1:id}",
+      "  name: ${2:Resource Name}",
+      "  resourceSpecification:",
+      "    id: ${3:spec-id}",
+      "    @type: ${4:ResourceSpecificationRef}"
+    ],
+    "description": "Insert a resource block with specification"
+  },
+  "Feature with Characteristic": {
+    "prefix": "feature",
+    "body": [
+      "feature:",
+      "  name: ${1:Feature Name}",
+      "  featureCharacteristic:",
+      "    - name: ${2:Characteristic Name}",
+      "      value: ${3:Value}"
+    ],
+    "description": "Insert a feature block with one characteristic"
+  },
+  "Parameter with Default": {
+    "prefix": "param",
+    "body": [
+      "parameters:",
+      "  ${1:parameterName}:",
+      "    type: ${2:string}",
+      "    default: ${3:defaultValue}",
+      "    description: ${4:Description here}"
+    ],
+    "description": "Insert a parameter definition with default and description"
+  },
+  "Reference with @type and @referredType": {
+    "prefix": "ref-entity",
+    "body": [
+      "relatedEntity:",
+      "  role: ${1:role}",
+      "  @type: ${2:EntityRef}",
+      "  id: ${3:entity-id}",
+      "  @referredType: ${4:EntityType}"
+    ],
+    "description": "Insert a relatedEntity block with reference details"
+  }
+}

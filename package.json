@@ -1,0 +1,49 @@
+{
+  "name": "hpsd-descriptor-support",
+  "displayName": "HPE Service Director Descriptors",
+  "description": "Syntax highlighting and basic support for .dsd, .hds, .dsc, .svc, .knd, .tpl files used in HPE Service Director (HPSD/HEAT)",
+  "version": "0.0.1",
+  "publisher": "daniel-dev",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "hpsd",
+        "aliases": [
+          "HPSD Descriptors",
+          "hpsd"
+        ],
+        "extensions": [
+          ".dsd",
+          ".hds",
+          ".dsc",
+          ".svc",
+          ".knd",
+          ".tpl",
+          ".hpsd",
+          ".yaml"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "hpsd",
+        "scopeName": "source.hpsd",
+        "path": "./syntaxes/hpsd.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "hpsd",
+        "path": "./snippets/hpsd.code-snippets"
+      }
+    ]
+  }
+}
