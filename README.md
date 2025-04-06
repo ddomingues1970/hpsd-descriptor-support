@@ -23,3 +23,5 @@ Este plugin fornece realce de sintaxe e suporte básico para arquivos `.dsd`, `.
 1. **Empacotamento**: No diretório raiz do projeto, execute:
    ```bash
    vsce package
+   code --install-extension hpsd-descriptor-support-0.0.1.vsix
+
